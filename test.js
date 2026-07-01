@@ -1,0 +1,8 @@
+console.log('Ejecutando pruebas de TaskNote...');
+// Prueba mínima: verifica que el archivo principal existe
+const fs = require('fs');
+if (!fs.existsSync('./index.html')) {
+  console.error('FALLO: index.html no encontrado');
+  process.exit(1);
+}
+console.log('✓ Todas las pruebas pasaron');
